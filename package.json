@@ -1,7 +1,7 @@
 {
   "name": "@bebeal/tailwind-grid",
   "version": "0.1.0",
-  "description": "A simple tailwind plugin that adds grid and dot backgrounds",
+  "description": "A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

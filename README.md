@@ -1,6 +1,6 @@
 # Tailwind Grid
 
-A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns to your projects.
+A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns
 
 <div align="center">
   <img width="1233" alt="Tailwind Grid Preview" src="https://github.com/user-attachments/assets/31e5c3b8-976a-41f7-a4c4-0312b791a8c2" />
