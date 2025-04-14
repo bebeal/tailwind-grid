@@ -1,76 +1,65 @@
-# console-prefix-plugin
+# Tailwind Grid
 
-Adds colored prefixes to console.log messages in Vite builds.
+A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns to your projects.
 
-## Install
+<div align="center">
+  <img width="1233" alt="Tailwind Grid Preview" src="https://github.com/user-attachments/assets/31e5c3b8-976a-41f7-a4c4-0312b791a8c2" />
+</div>
+
+## Installation
 
 ```bash
-npm install @bebeal/console-prefix-plugin --save-dev
+npm install @bebeal/tailwind-grid --save-dev
 ```
 
 ## Usage
 
-```ts
-// vite.config.js
-import { defineConfig } from 'vite'
-import consolePrefix from '@bebeal/console-prefix-plugin'
-
-export default defineConfig({
-  plugins: [
-    consolePrefix('[server]') // Default color: magenta
-  ]
-})
-```
-
-<div align="center">
-  <img width="1233" alt="Screenshot 2025-03-22 at 4 04 05 PM" src="https://github.com/user-attachments/assets/d01e6040-09f7-4154-9854-1e6dc332703f" />
-</div>
-
-With named color:
+### Tailwind v3
+Add the plugin to your Tailwind configuration:
 
 ```ts
-import { defineConfig } from 'vite'
-import consolePrefix from '@bebeal/console-prefix-plugin'
-
-export default defineConfig({
-  plugins: [
-    consolePrefix('[api]', 'cyan'),
-  ]
-})
-```
-
-<div align="center">
-  <img width="1233" alt="Screenshot 2025-03-22 at 4 05 25 PM" src="https://github.com/user-attachments/assets/411003e9-3366-4d35-ac73-e8f61e0005da" />
-</div>
-
-With raw ANSI color code:
-
-```ts
-import consolePrefix from '@bebeal/console-prefix-plugin'
+// tailwind.config.ts
+import type { Config } from 'tailwindcss'
+import GridPlugin from '@bebeal/tailwind-grid'
 
 export default {
+  theme: {
+    // ...
+  },
   plugins: [
-    consolePrefix('[custom]', '\x1b[38;5;208m') // Custom orange color
-  ]
-}
+    GridPlugin,
+  ],
+} satisfies Config
 ```
 
-<div align="center">
-  <img width="1233" alt="Screenshot 2025-03-22 at 4 05 47 PM" src="https://github.com/user-attachments/assets/98612f71-0f28-4361-bec6-73d6ff905fcb" />
+### Tailwind v4
+Use the `@plugin` directive in your css file:
+
+```css
+@plugin "@bebeal/tailwind-grid"
+```
+
+### Available Classes
+
+- `bg-grid`
+- `bg-grid-md`
+- `bg-grid-sm`
+- `bg-dot`
+- `bg-dot-md`
+- `bg-dot-sm`
+
+You can style them like any other background (e.g. with color, opacity, etc.)
+
+### Example
+
+```html
+<div class="h-[450px] bg-black bg-grid-white/[0.2] relative">
+  <div class="absolute pointer-events-none inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+  <div class="relative z-20">
+    <!-- Your content here -->
+  </div>
 </div>
-
-## Available Colors
-
-- black
-- red
-- green
-- yellow
-- blue
-- magenta (default)
-- cyan
-- white
-- gray
-- reset
+```
 
 ## License
 

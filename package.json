@@ -1,5 +1,5 @@
 {
-  "name": "@bebeal/tailwind-plugin",
+  "name": "@bebeal/tailwind-grid",
   "version": "0.1.0",
   "description": "A simple tailwind plugin that adds grid and dot backgrounds",
   "type": "module",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "demo": "npm run build && npm run build:demo && vite demo",
+    "demo": "vite demo",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
