@@ -1,9 +1,9 @@
 # Tailwind Grid
 
-A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns
+A simple Tailwind CSS plugin that adds grid & dot background patterns
 
 <div align="center">
-  <img width="1233" alt="Tailwind Grid Preview" src="https://github.com/user-attachments/assets/31e5c3b8-976a-41f7-a4c4-0312b791a8c2" />
+  <img width="1233" alt="Tailwind Grid Preview" src="https://github.com/user-attachments/assets/551ab151-eb19-45ca-a5cb-6fbebc6549d7" />
 </div>
 
 ## Installation
@@ -41,23 +41,20 @@ Use the `@plugin` directive in your css file:
 
 ### Available Classes
 
-- `bg-grid`
-- `bg-grid-md`
-- `bg-grid-sm`
-- `bg-dot`
-- `bg-dot-md`
-- `bg-dot-sm`
+- `bg-grid-{color}`
+- `bg-grid-md-{color}`
+- `bg-grid-sm-{color}`
+- `bg-dot-{color}`
+- `bg-dot-md-{color}`
+- `bg-dot-sm-{color}`
 
 You can style them like any other background (e.g. with color, opacity, etc.)
 
 ### Example
 
-```html
-<div class="h-[450px] bg-black bg-grid-white/[0.2] relative">
-  <div class="absolute pointer-events-none inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
-  <div class="relative z-20">
-    <!-- Your content here -->
-  </div>
+```tsx
+<div className="h-[450px] bg-black bg-grid-white/[0.3] relative">
+    <div className="absolute pointer-events-none inset-0 bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
 </div>
 ```
 

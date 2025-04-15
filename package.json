@@ -2,7 +2,7 @@
   "name": "@bebeal/tailwind-grid",
   "version": "0.1.0",
   "author": "Benjamin Noah Beal",
-  "description": "A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns",
+  "description": "A simple Tailwind CSS plugin that adds grid & dot background patterns",
   "license": "MIT",
   "repository": {
     "type": "git",
