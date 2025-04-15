@@ -38,7 +38,7 @@ export default {
 Use the `@plugin` directive in your css file:
 
 ```css
-@plugin "@bebeal/tailwind-grid"
+@plugin '@bebeal/tailwind-grid';
 ```
 
 ### Available Classes
