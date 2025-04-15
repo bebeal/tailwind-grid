@@ -1,7 +1,23 @@
 {
   "name": "@bebeal/tailwind-grid",
   "version": "0.1.0",
+  "author": "Benjamin Noah Beal",
   "description": "A simple Tailwind CSS plugin that adds beautiful grid and dot background patterns",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bebeal/tailwind-grid.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "grid",
+    "dot",
+    "background"
+  ],
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,15 +29,6 @@
     "demo": "vite demo",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [
-    "tailwindcss",
-    "tailwindcss-plugin",
-    "grid",
-    "dot",
-    "background"
-  ],
-  "author": "Benjamin Noah Beal",
-  "license": "MIT",
   "devDependencies": {
     "@types/react": "^19.1.1",
     "@types/react-dom": "^19.1.2",
@@ -36,9 +43,5 @@
   },
   "dependencies": {
     "mini-svg-data-uri": "^1.4.4"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bebeal/tailwind-grid.git"
   }
 }
