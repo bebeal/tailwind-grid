@@ -1,4 +1,4 @@
-# Tailwind Grid
+# @bebeal/tailwind-grid
 
 A simple Tailwind CSS plugin that adds grid & dot background patterns
 
