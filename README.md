@@ -2,9 +2,11 @@
 
 A simple Tailwind CSS plugin that adds grid & dot background patterns
 
-<div align="center">
-  <img height="2000" alt="Tailwind Grid Preview" src="./demo/public/tailwind-grid.png" />
-</div>
+<kbd>
+  <div align="center">
+    <img height="2000" alt="Tailwind Grid Preview" src="./demo/public/tailwind-grid.png" />
+  </div>
+</kbd>
 
 ## Installation
 
